@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Amrut colddrinks</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+    <section>
+        <div class="circle"></div>
+        <header>
+            <a href="#" class="logo"> <img src="logo.jpg" alt=""> </a>
+            <ul>
+                <li><a href="#">Home</a></li>
+                <li><a href="#">Brands</a></li>
+                <li><a href="#">About</a></li>
+                <li><a href="#">Contact us</a></li>
+            </ul>
+        </header>
+        <div class="content">
+            <div class="textbox">
+                <h2>It's not just Colddrink <br>It's <span>Amrut</span></h2>
+                <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Ducimus officia quisquam blanditiis
+                    perferendis commodi tempora minus impedit ab quo repellat cum aspernatur minima ex, porro laudantium
+                    non ipsa ullam quasi debitis doloribus tempore fugiat!</p>
+                    <a href="#">Order Now</a>
+                </div>
+                    <div class="imgbox">
+                        <img src="1.png" class="amrut">
+            </div>
+        </div>
+        <ul class="thumb">
+        <li> <img src="thumb1.png" onclick="imgSlider('1.png');changeCircleColor('#017143')"></li>
+        <li> <img src="thumb2.png" onclick="imgSlider('2.png');changeCircleColor('#A52A2A')"></li>
+        <li> <img src="thumb3.png" onclick="imgSlider('3.png');changeCircleColor('#343434')"></li>
+        <li> <img src="thumb4.png" onclick="imgSlider('4.png');changeCircleColor('#bc8f6c')"></li>
+        <li> <img src="thumb5.png" onclick="imgSlider('5.png');changeCircleColor('#ff8c00')"></li>
+        </ul>
+        <ul class="sci">
+            <li><a href="#"><img src="fb.png" alt=""></a></li>
+            <li><a href="#"><img src="in.png" alt=""></a></li>
+            <li><a href="#"><img src="tw.png" alt=""></a></li>
+        </ul>
+    </section>
+    <script type="text/javascript">
+        function imgSlider(anything){
+            document.querySelector('.amrut').src = anything;
+        }
+        function changeCircleColor(color){
+            const circle = document.querySelector('.circle');
+            circle.style.background = color;
+        }
+    </script>
+</body>
+
+</html>
